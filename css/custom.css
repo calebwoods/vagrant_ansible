@@ -1,0 +1,62 @@
+/* Custom CSS for your KeyDown presentation here */
+
+.deck-container .slide {
+  overflow: hidden;
+}
+/* Uncomment to turn off deck.js navigation */
+.deck-prev-link,
+.deck-next-link {
+    display: none !important;
+}
+
+/* Uncomment to turn off deck.js status */
+/*.deck-status {
+    display: none;
+}
+*/
+
+.slide.diagram img {
+  height: 550px;
+}
+
+.deck-container ul ul {
+  margin-bottom: -0.6em !important;
+}
+
+.deck-container .slide .deck-codemirror-result,
+.deck-container .slide .CodeMirror {
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace !important;
+  line-height: 1.1;
+  border: 0 !important;
+}
+
+.deck-container .slide.snippet .deck-codemirror-result,
+.deck-container .slide.snippet .CodeMirror {
+  font-size: 1.5rem !important;
+}
+
+.run-example {
+  background: #333;
+  color: white;
+  width: 100%;
+  padding: 10px 35px !important;
+  display: block !important;
+}
+
+.run-example:before {
+  content: '$ ';
+}
+
+.run-example .run,
+.run-example .clear {
+  float: right;
+}
+
+.run-example .result {
+  border-top: 1px dotted #777;
+  display: none;
+  margin-top: 5px;
+  padding-top: 5px;
+  width: 100%;
+  white-space: pre-line;
+}
